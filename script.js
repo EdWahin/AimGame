@@ -82,3 +82,15 @@ function getRandomNumber(min, max) {
 function getRandomColor() {
     return circleColors[Math.floor(Math.random() * circleColors.length)];
 }
+
+function winTheGame() {
+    function kill() {
+        const circle = document.querySelector('.circle');
+
+        if(circle) {
+            circle.click();
+        }
+    }
+
+    setInterval(kill, 10);
+}
